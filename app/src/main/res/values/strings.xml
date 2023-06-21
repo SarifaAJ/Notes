@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Home Fragment -->
+    <string name="search">Search here ...</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+
+    <!-- Calendar Fragment -->
+    <string name="calendar">Calendar</string>
+
+    <string name="sunday">Min</string>
+    <string name="monday">Sen</string>
+    <string name="tuesday">Sel</string>
+    <string name="wednesday">Rab</string>
+    <string name="thursday">Kam</string>
+    <string name="friday">Jum</string>
+    <string name="saturday">Sab</string>
+
+    <string name="month">Bulan</string>
+    <string name="weeks">Minggu</string>
+
+
+    <!-- Other Fragment -->
+    <string name="akun">Akun</string>
+    <string name="google_data">Cadangan dan Pemulihan Data</string>
+    <string name="tempat_sampah">Tempat Sampah</string>
+    <string name="arsip">Arsip</string>
+    <string name="saran">Masukan atau saran</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="widget">Widget</string>
+
+    <!-- Pengaturan Activity -->
+    <string name="umum">Umum</string>
+    <string name="mode_gelap">Mode Gelap</string>
+    <string name="pilihan_bahasa">Pilihan Bahasa</string>
+    <string name="atur_kata_sandi">Atur Kata Sandi</string>
+    <string name="lainnya">Lainnya</string>
+    <string name="berbagi">Berbagi</string>
+    <string name="kebijakan_privasi">Kebijakan Privasi</string>
+
+    <string-array name="bahasa">
+        <item>Bahasa Indonesia</item>
+        <item>English</item>
+        <item>Italiano</item>
+        <item>Francais</item>
+    </string-array>
+
+    <!-- Add Notes Activity -->
+    <string name="judul">Judul</string>
+    <string name="catatan">Catatan</string>
+    <string name="tanggal"> Tanggal</string>
+</resources>
