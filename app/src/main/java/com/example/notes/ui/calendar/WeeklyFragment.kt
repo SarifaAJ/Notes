@@ -8,14 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.notes.calendarAdapter.CalendarAdapter
-import com.example.notes.calendarAdapter.CalendarUtils
+import com.example.notes.adapter.CalendarAdapter
+import com.example.notes.adapter.CalendarUtils
 import com.example.notes.databinding.FragmentWeeklyBinding
-import com.example.notes.notesAdapter.NotesListAdapter
+import com.example.notes.adapter.NotesListAdapter
 import com.example.notes.roomDatabase.MyApp
 import com.example.notes.roomDatabase.model.NotesModel
 import com.example.notes.ui.AddNotesActivity
@@ -88,7 +87,7 @@ class WeeklyFragment : Fragment(), CalendarAdapter.OnItemClickListener {
     private fun setWeekView() {
         monthYearText.text = calendarUtils.monthYearFromDate(calendarUtils.selectedDate)
         val daysInWeek = calendarUtils.daysInWeekArray(calendarUtils.selectedDate)
-        val calendarAdapter = CalendarAdapter(daysInWeek)
+        val calendarAdapter = CalendarAdapter(daysInWeek, calendarUtils)
         calendarAdapter.setOnItemClickListener(this)
         val layoutManager = GridLayoutManager(requireContext(), 7)
         binding.calendarRecyclerView.layoutManager = layoutManager

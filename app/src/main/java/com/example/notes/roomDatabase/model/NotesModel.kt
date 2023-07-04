@@ -18,6 +18,8 @@ class NotesModel() : Parcelable{
     var date : String = ""
     @ColumnInfo(name = "pinned")
     var pinned : Boolean = false
+    @ColumnInfo(name = "color")
+    var color: Int = 0
 
     constructor(parcel: Parcel) : this() {
         id = parcel.readInt()
@@ -25,6 +27,7 @@ class NotesModel() : Parcelable{
         description = parcel.readString()
         date = parcel.readString().toString()
         pinned = parcel.readByte() != 0.toByte()
+        color = parcel.readInt()
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -33,6 +36,7 @@ class NotesModel() : Parcelable{
         parcel.writeString(description)
         parcel.writeString(date)
         parcel.writeByte(if (pinned) 1 else 0)
+        parcel.writeInt(color)
     }
 
     override fun describeContents(): Int {
@@ -48,5 +52,4 @@ class NotesModel() : Parcelable{
             return arrayOfNulls(size)
         }
     }
-
 }

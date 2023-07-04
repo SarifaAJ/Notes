@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="sambutan">Welcome</string>
+
+    <!-- Home Fragment -->
+    <string name="search">Search here …</string>
+
+    <!-- Calendar Fragment -->
+    <string name="calendar">Calendar</string>
+
+    <string name="sunday">Sun</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thur</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+
+    <string name="month">Months</string>
+    <string name="weeks">Weeks</string>
+
+    <!-- Other Fragment -->
+    <string name="akun">Account</string>
+    <string name="google_data">Data Backup and Recovery</string>
+    <string name="profile">Profile</string>
+    <string name="tempat_sampah">Trash can</string>
+    <string name="arsip">Archive</string>
+    <string name="saran">Feedback or suggestions</string>
+    <string name="pengaturan">Setting</string>
+    <string name="umum">General</string>
+    <string name="mode_gelap">Theme</string>
+    <string name="pilihan_bahasa">Language Options</string>
+    <string name="atur_kata_sandi">Set Password</string>
+    <string name="lainnya">Other</string>
+    <string name="berbagi">Share</string>
+    <string name="kebijakan_privasi">Privacy Policy</string>
+
+    <!-- Add Notes Activity -->
+    <string name="judul">Title</string>
+    <string name="catatan">Note</string>
+    <string name="tanggal">Date</string>
+    <!-- Alert Dialog -->
+    <string name="hapus">Delete</string>
+    <string name="hapus_desc">Are you sure you want to delete this note?</string>
+    <string name="tidak">Cancel</string>
+
+    <string name="notes_diperbarui">Notes successfully updated</string>
+    <string name="notes_dihapus">Notes successfully deleted</string>
+    <string name="notes_batal_dihapus">Failed to delete notes</string>
+
+    <!-- Bottom Sheet Dialog -->
+    <string name="background_color">Background Color</string>
+    <string name="red">Red</string>
+    <string name="orange">Orange</string>
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+    <string name="turquoise">Turquoise</string>
+    <string name="blue">Blue</string>
+    <string name="purple">Purple</string>
+    <string name="pink">Pink</string>
+    <string name="white">White</string>
+
+    <!-- SignUp LogIn Activity -->
+    <string name="username_edt">Insert username</string>
+    <string name="email_edt">Insert email</string>
+    <string name="password_edt">Input password</string>
+    <string name="confirm_edt">Confirm password</string>
+    <string name="question">Are you already an user? Login</string>
+    <string name="question_2">Aren\'t you registered yet? Sign Up</string>
+
+</resources>

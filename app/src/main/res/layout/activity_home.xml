@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    style="@style/ScreenBackground"
     tools:context=".ui.HomeActivity">
 
     <FrameLayout
@@ -18,8 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/rectangle_1"
-        android:backgroundTint="@color/light_blue"
+        android:background="@drawable/rectangle"
         app:labelVisibilityMode="unlabeled"
         app:itemIconSize="@dimen/_24sdp"
         app:itemIconTint="@drawable/icon_item_selector"

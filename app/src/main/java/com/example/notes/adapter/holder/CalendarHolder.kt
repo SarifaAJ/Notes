@@ -1,12 +1,12 @@
-package com.example.notes.calendarAdapter.holder
+package com.example.notes.adapter.holder
 
 import android.graphics.Color
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.notes.R
-import com.example.notes.calendarAdapter.CalendarAdapter
-import com.example.notes.calendarAdapter.CalendarUtils
+import com.example.notes.adapter.CalendarAdapter
+import com.example.notes.adapter.CalendarUtils
 import com.example.notes.databinding.CalendarCellBinding
 import java.time.LocalDate
 
@@ -16,15 +16,12 @@ class CalendarHolder(
     private val days: List<LocalDate?>) :
     RecyclerView.ViewHolder(binding.root), View.OnClickListener {
 
-    private val calendarUtils = CalendarUtils().apply {
-        selectedDate = LocalDate.now()
-    }
 
     init {
         binding.root.setOnClickListener(this)
     }
 
-    fun bind(date: LocalDate?) {
+    fun bind(date: LocalDate?, calendarUtils: CalendarUtils) {
         if (date == null) {
             binding.tvCellDay.text = ""
             binding.parentView.visibility = View.INVISIBLE
@@ -37,7 +34,7 @@ class CalendarHolder(
 
             if (isSelected) {
                 binding.parentView.setBackgroundColor(
-                    ContextCompat.getColor(context, R.color.light_blue)
+                    ContextCompat.getColor(context, R.color.palette1_3)
                 )
             } else {
                 binding.parentView.setBackgroundColor(Color.TRANSPARENT)

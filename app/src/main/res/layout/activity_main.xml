@@ -9,7 +9,6 @@
     android:background="@color/white"
     tools:context=".ui.MainActivity">
 
-
     <Button
         android:id="@+id/btn_lanjutkan"
         android:layout_width="match_parent"
@@ -17,7 +16,7 @@
         android:layout_marginBottom="@dimen/_32sdp"
         android:background="@drawable/rectangle_1"
         android:backgroundTint="@color/dark_blue"
-        android:text="Lanjutkan"
+        android:text="@string/sambutan"
         android:textColor="@color/cream3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

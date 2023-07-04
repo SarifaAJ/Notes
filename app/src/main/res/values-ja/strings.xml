@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="sambutan">歓迎</string>
+
+    <!-- Home Fragment -->
+    <string name="search">検索はこちら …</string>
+
+    <!-- Calendar Fragment -->
+    <string name="calendar">予定表</string>
+
+    <string name="sunday">日</string>
+    <string name="monday">月</string>
+    <string name="tuesday">火</string>
+    <string name="wednesday">水</string>
+    <string name="thursday">木</string>
+    <string name="friday">金</string>
+    <string name="saturday">土</string>
+
+    <string name="month">月</string>
+    <string name="weeks">週間</string>
+
+    <!-- Other Fragment -->
+    <string name="akun">アカウント</string>
+    <string name="google_data">データのバックアップと復元</string>
+    <string name="profile">プロフィール</string>
+    <string name="tempat_sampah">ゴミ箱</string>
+    <string name="arsip">文書館</string>
+    <string name="saran">ご意見・ご感想</string>
+    <string name="pengaturan">設定</string>
+    <string name="umum">一般</string>
+    <string name="mode_gelap">テーマ</string>
+    <string name="pilihan_bahasa">言語オプション</string>
+    <string name="atur_kata_sandi">パスワードの設定</string>
+    <string name="lainnya">その他</string>
+    <string name="berbagi">共有</string>
+    <string name="kebijakan_privasi">個人情報保護方針</string>
+
+    <!-- Add Notes Activity -->
+    <string name="judul">題名</string>
+    <string name="catatan">備考</string>
+    <string name="tanggal"> 日付</string>
+    <!-- Alert Dialog -->
+    <string name="hapus">削除</string>
+    <string name="hapus_desc">本当にこのメモを削除しますか？</string>
+    <string name="tidak">キャンセル</string>
+
+    <string name="notes_diperbarui">ノートの更新に成功</string>
+    <string name="notes_dihapus">メモの削除に成功。</string>
+    <string name="notes_batal_dihapus">ノートの削除に失敗しました。</string>
+
+    <!-- Bottom Sheet Dialog -->
+    <string name="background_color">背景色</string>
+    <string name="red">赤</string>
+    <string name="orange">オレンジ色</string>
+    <string name="yellow">黄色</string>
+    <string name="green">緑色</string>
+    <string name="turquoise">青緑色</string>
+    <string name="blue">青色</string>
+    <string name="purple">紫色</string>
+    <string name="pink">ピンク色</string>
+    <string name="white">白色</string>
+
+    <!-- SignUp LogIn Activity -->
+    <string name="username_edt">ユーザー名の挿入</string>
+    <string name="email_edt">電子メールを挿入する</string>
+    <string name="password_edt">パスワードを入力</string>
+    <string name="confirm_edt">パスワードの確認</string>
+    <string name="question">すでにユーザーですか？ログイン</string>
+    <string name="question_2">まだ登録されていませんか？登録する</string>
+
+</resources>

@@ -1,4 +1,4 @@
-package com.example.notes.calendarAdapter
+package com.example.notes.adapter
 
 import java.time.DayOfWeek
 import java.time.LocalDate

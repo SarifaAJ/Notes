@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.notes.R
-import com.example.notes.notesAdapter.NotesListAdapter
+import com.example.notes.adapter.NotesListAdapter
 import com.example.notes.databinding.FragmentHomeBinding
 import com.example.notes.roomDatabase.MyApp.Companion.db
 import com.example.notes.roomDatabase.model.NotesModel
@@ -22,6 +22,7 @@ class HomeFragment : Fragment() {
     // database
     private var listNotes: ArrayList<NotesModel> = ArrayList()
     private lateinit var adapter: NotesListAdapter
+    //private var db: AppDatabase? = null
 
     private var isLinearView = true
 
@@ -45,6 +46,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // database
+        //db = MyApp.db
         listNotes = db?.notesDao()?.getAll() as ArrayList<NotesModel>
         adapter = NotesListAdapter(listNotes)
 

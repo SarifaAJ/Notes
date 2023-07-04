@@ -1,11 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Notes</string>
     <string name="sambutan">Selamat Datang</string>
 
     <!-- Home Fragment -->
     <string name="search">Cari disini …</string>
-    <string name="list" translatable="false">List</string>
-    <string name="grid" translatable="false">Grid</string>
 
     <!-- Calendar Fragment -->
     <string name="calendar">Kalender</string>
@@ -37,13 +36,6 @@
     <string name="berbagi">Berbagi</string>
     <string name="kebijakan_privasi">Kebijakan Privasi</string>
 
-    <string-array name="bahasa">
-        <item>Bahasa Indonesia</item>
-        <item>English</item>
-        <item>Italiano</item>
-        <item>Francais</item>
-        <item>日本語</item>
-    </string-array>
 
     <!-- Add Notes Activity -->
     <string name="judul">Judul</string>
@@ -77,13 +69,5 @@
     <string name="confirm_edt">Konfirmasi password</string>
     <string name="question">Apakah Anda sudah menjadi pengguna? Masuk</string>
     <string name="question_2">Apakah anda belum terdaftar? Daftar</string>
-
-    <string name="username" translatable="false">Username</string>
-    <string name="email" translatable="false">Email</string>
-    <string name="password" translatable="false">Password</string>
-    <string name="confirm" translatable="false">Confirm Password</string>
-    <string name="sign_up" translatable="false">SIGN UP</string>
-    <string name="log_in" translatable="false">LOG IN</string>
-
 
 </resources>

@@ -9,8 +9,8 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.notes.calendarAdapter.CalendarAdapter
-import com.example.notes.calendarAdapter.CalendarUtils
+import com.example.notes.adapter.CalendarAdapter
+import com.example.notes.adapter.CalendarUtils
 import com.example.notes.databinding.FragmentMonthlyBinding
 import java.time.LocalDate
 
@@ -56,7 +56,7 @@ class MonthlyFragment : Fragment(), CalendarAdapter.OnItemClickListener {
     private fun setMonthView() {
         monthYearText.text = calendarUtils.monthYearFromDate(calendarUtils.selectedDate)
         val daysInMonth = calendarUtils.daysInMonthArray(calendarUtils.selectedDate)
-        val calendarAdapter = CalendarAdapter(daysInMonth)
+        val calendarAdapter = CalendarAdapter(daysInMonth, calendarUtils)
         calendarAdapter.setOnItemClickListener(this)
         val layoutManager = GridLayoutManager(requireContext(), 7)
         binding.calendarRecyclerView.layoutManager = layoutManager

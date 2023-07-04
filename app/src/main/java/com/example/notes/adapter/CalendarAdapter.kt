@@ -1,13 +1,13 @@
-package com.example.notes.calendarAdapter
+package com.example.notes.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.notes.calendarAdapter.holder.CalendarHolder
+import com.example.notes.adapter.holder.CalendarHolder
 import com.example.notes.databinding.CalendarCellBinding
 import java.time.LocalDate
 
-class CalendarAdapter(private val days : ArrayList<LocalDate?>) : RecyclerView.Adapter<CalendarHolder>() {
+class CalendarAdapter(private val days: ArrayList<LocalDate?>, private val calendarUtils: CalendarUtils) : RecyclerView.Adapter<CalendarHolder>() {
 
     private var itemClickListener: OnItemClickListener? = null
 
@@ -40,7 +40,7 @@ class CalendarAdapter(private val days : ArrayList<LocalDate?>) : RecyclerView.A
     override fun onBindViewHolder(holder: CalendarHolder, position: Int) {
         val date = days[position]
         if (date != null) {
-            holder.bind(date)
+            holder.bind(date, calendarUtils)
         }
     }
 }

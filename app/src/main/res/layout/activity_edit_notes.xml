@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/_8sdp"
-    android:background="@color/white"
+    style="@style/ScreenBackground"
     tools:context=".ui.EditNotesActivity">
 
     <LinearLayout
@@ -26,7 +26,7 @@
                     android:id="@+id/btn_back_arrow"
                     android:layout_width="@dimen/_32sdp"
                     android:layout_height="@dimen/_32sdp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="@android:color/transparent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/round_arrow_back" />
@@ -36,27 +36,27 @@
                     android:layout_width="@dimen/_32sdp"
                     android:layout_height="@dimen/_32sdp"
                     android:layout_marginEnd="@dimen/_96sdp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="@android:color/transparent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/outline_push_pin" />
 
                 <ImageButton
-                    android:id="@+id/btn_reminder"
+                    android:id="@+id/btn_color"
                     android:layout_width="@dimen/_32sdp"
                     android:layout_height="@dimen/_32sdp"
                     android:layout_marginEnd="@dimen/_64sdp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="@android:color/transparent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/outline_notification_add" />
+                    app:srcCompat="@drawable/outline_color_lens" />
 
                 <ImageButton
                     android:id="@+id/btn_archieve"
                     android:layout_width="@dimen/_32sdp"
                     android:layout_height="@dimen/_32sdp"
                     android:layout_marginEnd="@dimen/_32sdp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="@android:color/transparent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/outline_archive" />
@@ -65,7 +65,7 @@
                     android:id="@+id/btn_delete"
                     android:layout_width="@dimen/_32sdp"
                     android:layout_height="@dimen/_32sdp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="@android:color/transparent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/outline_delete" />
@@ -84,6 +84,7 @@
             android:hint="@string/judul"
             android:textColorHint="@color/light_blue"
             android:textColor="@color/black"
+            android:textStyle="bold"
             android:textSize="@dimen/_16sdp" />
 
         <TextView

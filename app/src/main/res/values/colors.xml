@@ -23,4 +23,19 @@
     <color name="green_light">#A4BE7B</color>
     <color name="green_dark">#285430</color>
 
+    <color name="pastel_red">#FFADAD</color>
+    <color name="pastel_orange">#FFD6A5</color>
+    <color name="pastel_yellow">#FDFFB6</color>
+    <color name="pastel_green">#CAFFBF</color>
+    <color name="pastel_cyan">#9BF6FF</color>
+    <color name="pastel_blue">#A0C4FF</color>
+    <color name="pastel_purple">#BDB2FF</color>
+    <color name="pastel_pink">#FFC6FF</color>
+    <color name="pastel_grey">#d9d9d9</color>
+
+    <color name="palette1_1">#495867</color>
+    <color name="palette1_2">#577399</color>
+    <color name="palette1_3">#bdd5ea</color>
+    <color name="palette1_4">#fe5f55</color>
+
 </resources>

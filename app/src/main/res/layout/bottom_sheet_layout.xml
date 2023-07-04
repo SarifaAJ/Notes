@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/bsd_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:text="@string/background_color"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/red"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
+        android:clickable="true"
+        app:drawableStartCompat="@drawable/baseline_circle"
+        app:drawableTint="@color/pastel_red" />
+
+    <TextView
+        android:id="@+id/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/orange"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
+        android:clickable="true"
+        app:drawableStartCompat="@drawable/baseline_circle"
+        app:drawableTint="@color/pastel_orange" />
+
+    <TextView
+        android:id="@+id/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/yellow"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
+        android:clickable="true"
+        app:drawableStartCompat="@drawable/baseline_circle"
+        app:drawableTint="@color/pastel_yellow" />
+
+    <TextView
+        android:id="@+id/green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/green"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
+        android:clickable="true"
+        app:drawableStartCompat="@drawable/baseline_circle"
+        app:drawableTint="@color/pastel_green" />
+
+    <TextView
+        android:id="@+id/cyan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/turquoise"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
+        android:clickable="true"
+        app:drawableStartCompat="@drawable/baseline_circle"
+        app:drawableTint="@color/pastel_cyan" />
+
+    <TextView
+        android:id="@+id/blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/blue"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
+        android:clickable="true"
+        app:drawableStartCompat="@drawable/baseline_circle"
+        app:drawableTint="@color/pastel_blue" />
+
+    <TextView
+        android:id="@+id/purple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/purple"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
+        android:clickable="true"
+        app:drawableStartCompat="@drawable/baseline_circle"
+        app:drawableTint="@color/pastel_purple" />
+
+    <TextView
+        android:id="@+id/pink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/pink"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
+        android:clickable="true"
+        app:drawableStartCompat="@drawable/baseline_circle"
+        app:drawableTint="@color/pastel_pink" />
+
+    <TextView
+        android:id="@+id/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/white"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
+        android:clickable="true"
+        app:drawableStartCompat="@drawable/baseline_circle"
+        app:drawableTint="@color/white" />
+
+</LinearLayout>

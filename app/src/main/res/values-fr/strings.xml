@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="sambutan">Bienvenue</string>
+
+    <!-- Home Fragment -->
+    <string name="search">Rechercher ici …</string>
+
+    <!-- Calendar Fragment -->
+    <string name="calendar">Calendrier</string>
+
+    <string name="sunday">Dim</string>
+    <string name="monday">Lun</string>
+    <string name="tuesday">Mar</string>
+    <string name="wednesday">Mer</string>
+    <string name="thursday">Jeu</string>
+    <string name="friday">Ven</string>
+    <string name="saturday">Sam</string>
+
+    <string name="month">Mois</string>
+    <string name="weeks">Semaines</string>
+
+    <!-- Other Fragment -->
+    <string name="akun">Compte</string>
+    <string name="google_data">Sauvegarde et récupération des données</string>
+    <string name="profile">Profile</string>
+    <string name="tempat_sampah">Corbeille</string>
+    <string name="arsip">Archives</string>
+    <string name="saran">Commentaires ou suggestions</string>
+    <string name="pengaturan">Réglages</string>
+    <string name="umum">Généralités</string>
+    <string name="mode_gelap">Thème</string>
+    <string name="pilihan_bahasa">Options linguistiques</string>
+    <string name="atur_kata_sandi">Définir le mot de passe</string>
+    <string name="lainnya">Autres</string>
+    <string name="berbagi">Partager</string>
+    <string name="kebijakan_privasi">Politique de confidentialité</string>
+
+    <!-- Add Notes Activity -->
+    <string name="judul">Titre</string>
+    <string name="catatan">Note</string>
+    <string name="tanggal">Date</string>
+    <!-- Alert Dialog -->
+    <string name="hapus">supprimer</string>
+    <string name="hapus_desc">Êtes-vous sûr de vouloir supprimer cette note ?</string>
+    <string name="tidak">Annuler</string>
+
+    <string name="notes_diperbarui">Mise à jour réussie des notes</string>
+    <string name="notes_dihapus">Les notes ont été supprimées avec succès</string>
+    <string name="notes_batal_dihapus">Échec de la suppression des notes</string>
+
+    <!-- Bottom Sheet Dialog -->
+    <string name="background_color">Couleur d\'arrière-plan</string>
+    <string name="red">Rouge</string>
+    <string name="orange">Orange</string>
+    <string name="yellow">Jaune</string>
+    <string name="green">Vert</string>
+    <string name="turquoise">Turquoise</string>
+    <string name="blue">Bleu</string>
+    <string name="purple">Violet</string>
+    <string name="pink">Rose</string>
+    <string name="white">Blanc</string>
+
+    <!-- SignUp LogIn Activity -->
+    <string name="username_edt">Insérer le nom de l\'utilisateur</string>
+    <string name="email_edt">Insérer l\'email</string>
+    <string name="password_edt">Saisie du mot de passe</string>
+    <string name="confirm_edt">Confirmer le mot de passe</string>
+    <string name="question">Êtes-vous déjà un utilisateur ? Se connecter</string>
+    <string name="question_2">Vous n\'êtes pas encore inscrit ? S\'inscrire</string>
+
+</resources>

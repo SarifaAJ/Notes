@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:orientation="vertical"
+    style="@style/ScreenBackground"
     android:id="@+id/fragment_container"
     tools:context=".ui.bottomNavBar.OtherFragment">
 
@@ -39,7 +40,7 @@
                 android:layout_marginBottom="@dimen/_8sdp"
                 android:foreground="@drawable/round_person"
                 android:foregroundGravity="center"
-                android:src="@drawable/rectangle_1" />
+                android:src="@drawable/rectangle" />
 
             <TextView
                 android:id="@+id/tv_profile"
@@ -50,7 +51,7 @@
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_12sdp"
                 android:text="@string/google_data"
-                android:textColor="@color/black"
+                style="@style/TextColor"
                 android:textSize="@dimen/_12sdp" />
         </TableRow>
 
@@ -79,19 +80,28 @@
                 android:layout_marginBottom="@dimen/_8sdp"
                 android:foreground="@drawable/round_dark_mode"
                 android:foregroundGravity="center"
-                android:src="@drawable/rectangle_1" />
+                android:src="@drawable/rectangle" />
 
             <TextView
                 android:id="@+id/tv_mode"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_marginStart="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_12sdp"
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_12sdp"
                 android:text="@string/mode_gelap"
-                android:textColor="@color/black"
+                style="@style/TextColor"
                 android:textSize="@dimen/_12sdp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_8sdp" />
+
         </TableRow>
 
         <TableRow
@@ -99,7 +109,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_5sdp"
-            android:clickable="true">
+            android:clickable="true"
+            android:onClick="showConfirmationDialog">
 
             <ImageView
                 android:id="@+id/img_bahasa"
@@ -111,7 +122,7 @@
                 android:layout_marginBottom="@dimen/_8sdp"
                 android:foreground="@drawable/round_language"
                 android:foregroundGravity="center"
-                android:src="@drawable/rectangle_1" />
+                android:src="@drawable/rectangle" />
 
             <TextView
                 android:id="@+id/tv_bahasa"
@@ -122,71 +133,8 @@
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_12sdp"
                 android:textSize="@dimen/_12sdp"
-                android:textColor="@color/black"
+                style="@style/TextColor"
                 android:text="@string/pilihan_bahasa"/>
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/sandi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp">
-
-            <ImageView
-                android:id="@+id/img_sandi"
-                android:layout_width="@dimen/_32sdp"
-                android:layout_height="@dimen/_32sdp"
-                android:layout_marginStart="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:layout_marginBottom="@dimen/_8sdp"
-                android:foreground="@drawable/round_lock"
-                android:foregroundGravity="center"
-                android:src="@drawable/rectangle_1" />
-
-            <TextView
-                android:id="@+id/tv_sandi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_12sdp"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:layout_marginBottom="@dimen/_12sdp"
-                android:textSize="@dimen/_12sdp"
-                android:textColor="@color/black"
-                android:text="@string/atur_kata_sandi"/>
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tempat_sampah"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp"
-            android:clickable="true">
-
-            <ImageView
-                android:id="@+id/img_tempat_sampah"
-                android:layout_width="@dimen/_32sdp"
-                android:layout_height="@dimen/_32sdp"
-                android:layout_marginStart="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:layout_marginBottom="@dimen/_8sdp"
-                android:foreground="@drawable/round_delete"
-                android:foregroundGravity="center"
-                android:src="@drawable/rectangle_1" />
-
-            <TextView
-                android:id="@+id/tv_tempat_sampah"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_12sdp"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:layout_marginBottom="@dimen/_12sdp"
-                android:text="@string/tempat_sampah"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
         </TableRow>
 
         <TableRow
@@ -206,7 +154,7 @@
                 android:layout_marginBottom="@dimen/_8sdp"
                 android:foreground="@drawable/round_archive"
                 android:foregroundGravity="center"
-                android:src="@drawable/rectangle_1" />
+                android:src="@drawable/rectangle" />
 
             <TextView
                 android:id="@+id/tv_arsip"
@@ -217,9 +165,73 @@
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_12sdp"
                 android:text="@string/arsip"
-                android:textColor="@color/black"
+                style="@style/TextColor"
                 android:textSize="@dimen/_12sdp" />
         </TableRow>
+
+        <TableRow
+            android:id="@+id/sandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/img_sandi"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:foreground="@drawable/round_lock"
+                android:foregroundGravity="center"
+                android:src="@drawable/rectangle" />
+
+            <TextView
+                android:id="@+id/tv_sandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:textSize="@dimen/_12sdp"
+                style="@style/TextColor"
+                android:text="@string/atur_kata_sandi"/>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/berbagi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/img_berbagi"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:foreground="@drawable/round_share"
+                android:foregroundGravity="center"
+                android:src="@drawable/rectangle" />
+
+            <TextView
+                android:id="@+id/tv_berbagi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:textSize="@dimen/_12sdp"
+                style="@style/TextColor"
+                android:text="@string/berbagi"/>
+        </TableRow>
+
 
         <TextView
             android:id="@+id/lainnya"
@@ -246,7 +258,7 @@
                 android:layout_marginBottom="@dimen/_8sdp"
                 android:foreground="@drawable/round_help_outline"
                 android:foregroundGravity="center"
-                android:src="@drawable/rectangle_1" />
+                android:src="@drawable/rectangle" />
 
             <TextView
                 android:id="@+id/tv_saran"
@@ -257,39 +269,8 @@
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_12sdp"
                 android:textSize="@dimen/_12sdp"
-                android:textColor="@color/black"
+                style="@style/TextColor"
                 android:text="@string/saran"/>
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/berbagi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp">
-
-            <ImageView
-                android:id="@+id/img_berbagi"
-                android:layout_width="@dimen/_32sdp"
-                android:layout_height="@dimen/_32sdp"
-                android:layout_marginStart="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:layout_marginBottom="@dimen/_8sdp"
-                android:foreground="@drawable/round_share"
-                android:foregroundGravity="center"
-                android:src="@drawable/rectangle_1" />
-
-            <TextView
-                android:id="@+id/tv_berbagi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_12sdp"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:layout_marginBottom="@dimen/_12sdp"
-                android:textSize="@dimen/_12sdp"
-                android:textColor="@color/black"
-                android:text="@string/berbagi"/>
         </TableRow>
 
         <TableRow
@@ -308,7 +289,7 @@
                 android:layout_marginBottom="@dimen/_8sdp"
                 android:foreground="@drawable/round_info"
                 android:foregroundGravity="center"
-                android:src="@drawable/rectangle_1" />
+                android:src="@drawable/rectangle" />
 
             <TextView
                 android:id="@+id/tv_kebijakan_privasi"
@@ -319,7 +300,7 @@
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_12sdp"
                 android:text="@string/kebijakan_privasi"
-                android:textColor="@color/black"
+                style="@style/TextColor"
                 android:textSize="@dimen/_12sdp" />
         </TableRow>
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="sambutan">Benvenuti</string>
+
+    <!-- Home Fragment -->
+    <string name="search">Cerca qui …</string>
+
+    <!-- Calendar Fragment -->
+    <string name="calendar">Calendario</string>
+
+    <string name="sunday">Dom</string>
+    <string name="monday">Lun</string>
+    <string name="tuesday">Mar</string>
+    <string name="wednesday">Mer</string>
+    <string name="thursday">Gio</string>
+    <string name="friday">Ven</string>
+    <string name="saturday">Sab</string>
+
+    <string name="month">Mesi</string>
+    <string name="weeks">Settimane</string>
+
+    <!-- Other Fragment -->
+    <string name="akun">Conto</string>
+    <string name="google_data">Backup e ripristino dei dati</string>
+    <string name="profile">Profilo</string>
+    <string name="tempat_sampah">Cestino</string>
+    <string name="arsip">Archivio</string>
+    <string name="saran">Feedback o suggerimenti</string>
+    <string name="pengaturan">Impostazioni</string>
+    <string name="umum">Generale</string>
+    <string name="mode_gelap">Tema</string>
+    <string name="pilihan_bahasa">Opzioni di lingua</string>
+    <string name="atur_kata_sandi">Imposta password</string>
+    <string name="lainnya">Altro</string>
+    <string name="berbagi">Condividi</string>
+    <string name="kebijakan_privasi">Informativa sulla privacy</string>
+
+    <!-- Add Notes Activity -->
+    <string name="judul">Titolo</string>
+    <string name="catatan">Nota</string>
+    <string name="tanggal">Data</string>
+    <!-- Alert Dialog -->
+    <string name="hapus">Cancellare</string>
+    <string name="hapus_desc">È sicuro di voler cancellare questa nota?</string>
+    <string name="tidak">Annullare</string>
+
+    <string name="notes_diperbarui">Note aggiornate con successo</string>
+    <string name="notes_dihapus">Note eliminate con successo</string>
+    <string name="notes_batal_dihapus">Cancellazione delle note non riuscita</string>
+
+    <!-- Bottom Sheet Dialog -->
+    <string name="background_color">Colore di sfondo</string>
+    <string name="red">Rosso</string>
+    <string name="orange">Arancione</string>
+    <string name="yellow">Giallo</string>
+    <string name="green">Verde</string>
+    <string name="turquoise">Turchese</string>
+    <string name="blue">Blu</string>
+    <string name="purple">Viola</string>
+    <string name="pink">Rosa</string>
+    <string name="white">Bianco</string>
+
+    <!-- SignUp LogIn Activity -->
+    <string name="username_edt">Inserire il nome utente</string>
+    <string name="email_edt">Inserire l\'e-mail</string>
+    <string name="password_edt">Password di ingresso</string>
+    <string name="confirm_edt">Confermare la password</string>
+    <string name="question">Sei già un utente? Accesso</string>
+    <string name="question_2">Non siete ancora registrati? Iscriviti</string>
+
+</resources>
