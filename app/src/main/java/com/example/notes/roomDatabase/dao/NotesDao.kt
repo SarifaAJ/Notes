@@ -1,5 +1,6 @@
 package com.example.notes.roomDatabase.dao
 
+import android.icu.text.StringSearch
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -11,6 +12,10 @@ import com.example.notes.roomDatabase.model.NotesModel
 interface NotesDao {
     @Query("SELECT * FROM NotesModel ORDER BY id DESC")
     fun getAll() : List<NotesModel?>?
+
+    @Query("SELECT * FROM NotesModel WHERE title LIKE '%' || :search || '%'")
+    fun searchByTitle(search: String): List<NotesModel>
+
     @Insert
     fun insertNotes(vararg produk: NotesModel)
     @Update

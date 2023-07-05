@@ -1,11 +1,14 @@
 package com.example.notes.ui.bottomNavBar
 
 import android.content.Intent
+import android.icu.text.StringSearch
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.SearchView
+import androidx.core.view.isNotEmpty
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.notes.R
@@ -22,10 +25,8 @@ class HomeFragment : Fragment() {
     // database
     private var listNotes: ArrayList<NotesModel> = ArrayList()
     private lateinit var adapter: NotesListAdapter
-    //private var db: AppDatabase? = null
 
     private var isLinearView = true
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -38,6 +39,23 @@ class HomeFragment : Fragment() {
             val moveIntent = Intent(activity, AddNotesActivity::class.java)
             startActivity(moveIntent)
         }
+
+        binding.searchview.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                if (!query.isNullOrEmpty()) {
+                    onSearch(query)
+                }
+                return false
+            }
+            override fun onQueryTextChange(newText: String?): Boolean {
+                if (!newText.isNullOrEmpty()) {
+                    onSearch(newText)
+                } else {
+                    getData()
+                }
+                return false
+            }
+        })
 
         return view
     }
@@ -70,8 +88,18 @@ class HomeFragment : Fragment() {
     override fun onResume() {
         super.onResume()
 
+        getData()
+    }
+    private fun getData() {
         listNotes.clear()
         listNotes.addAll(db?.notesDao()?.getAll() as Collection<NotesModel>)
+
+        adapter.notifyDataSetChanged()
+    }
+
+    private fun onSearch(search: String) {
+        listNotes.clear()
+        listNotes.addAll(db?.notesDao()?.searchByTitle(search) as Collection<NotesModel>)
 
         adapter.notifyDataSetChanged()
     }
