@@ -85,5 +85,39 @@
     <string name="sign_up" translatable="false">SIGN UP</string>
     <string name="log_in" translatable="false">LOG IN</string>
 
+    <!-- Privacy Police Activity -->
+    <string name="pembukaan" translatable="false">Privacy Policy for Notes Application</string>
+    <string name="subjudul_1" translatable="false">Introduction</string>
+    <string name="desc_1" translatable="false">We value your privacy as a user of our Notes application. This Privacy Policy explains how we collect, use, and protect your personal information when you use this application. We are committed to protecting your privacy and ensuring that your personal information is used in accordance with this policy.</string>
+    <string name="subjudul_2" translatable="false">Information We Collect</string>
+    <string name="desc_2" translatable="false">We may collect certain personal information when you use our Notes application, including:
+1. Information you provide when signing up or setting up an account, such as your name, email address, and password.
+2. Content you save in your notes, including text, images, or related files.
+3. Information generated when you use the application, such as the date and time of usage, interactions with application features, and usage and performance data.
+</string>
+    <string name="subjudul_3" translatable="false">Use of Information</string>
+    <string name="desc_3" translatable="false">We use the personal information we collect for the following purposes:
+1. Providing and managing the Notes service you use.
+2. Improving and developing our application, as well as optimizing the user experience.
+3. Sending important notifications about updates, changes, or issues with the Notes service.
+4. Analyzing application usage for research and product development purposes.
+5. Enforcing the User Policy and Terms of Use of the application.
+</string>
+    <string name="subjudul_4" translatable="false">Disclosure to Third Parties</string>
+    <string name="desc_4" translatable="false">We will not disclose your personal information to third parties without your permission, except in the following situations:
+1. To fulfill legal obligations or official requests from authorities.
+2. To protect our rights, security, or property, as well as the rights, security, or property of other users.
+3. To support third-party service providers who assist in the operation of the Notes application, such as hosting or analytics providers.
+4. In the event of a change in company ownership, merger, or acquisition, where user information may be part of the transferred assets.
+</string>
+    <string name="subjudul_5" translatable="false">Information Security</string>
+    <string name="desc_5" translatable="false">We take appropriate steps to protect your personal information from unauthorized access, unauthorized use, alteration, or disclosure. We implement technical, administrative, and physical security measures to safeguard your personal information.</string>
+    <string name="subjudul_6" translatable="false">Privacy Settings</string>
+    <string name="desc_6" translatable="false">You have control over your personal information that we collect. You can access, update, or delete your personal information within the Notes application. You can also manage your privacy preferences within the application settings.</string>
+    <string name="subjudul_7" translatable="false">Changes to the Privacy Policy</string>
+    <string name="desc_7" translatable="false">This Privacy Policy may be updated from time to time. If there are substantial changes to this policy, we will notify you through in-app notifications or via the registered email address.</string>
+    <string name="subjudul_8" translatable="false">Contact Us</string>
+    <string name="desc_8" translatable="false">If you have any questions, issues, or requests regarding our privacy policy, please contact us at [contact email address].</string>
+    <string name="desc_9" translatable="false">By using our Notes application, you consent to the collection, use, and disclosure of your information as described in this privacy policy.</string>
 
 </resources>

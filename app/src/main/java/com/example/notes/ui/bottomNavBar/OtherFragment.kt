@@ -15,9 +15,8 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
 import com.example.notes.R
 import com.example.notes.databinding.FragmentOtherBinding
-import com.example.notes.ui.otherFragment.ArchieveActivity
-import com.example.notes.ui.otherFragment.DeleteActivity
-import com.google.android.material.switchmaterial.SwitchMaterial
+import com.example.notes.roomDatabase.helper.DBHelper
+import com.example.notes.ui.otherFragment.PrivacyPoliceActivity
 import java.util.Locale
 
 class OtherFragment : Fragment() {
@@ -31,6 +30,8 @@ class OtherFragment : Fragment() {
     private var isNightMode: Boolean = false
     private lateinit var editor: SharedPreferences.Editor
 
+    private lateinit var db : DBHelper
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -38,9 +39,12 @@ class OtherFragment : Fragment() {
         otherBinding = FragmentOtherBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        // To ArchiveActivity
-        binding.arsip.setOnClickListener {
-            val moveIntent = Intent(activity, ArchieveActivity::class.java)
+        db = DBHelper(requireContext())
+
+
+        // To PrivacyPoliceActivity
+        binding.kebijakanPrivasi.setOnClickListener {
+            val moveIntent = Intent(activity, PrivacyPoliceActivity::class.java)
             startActivity(moveIntent)
         }
 

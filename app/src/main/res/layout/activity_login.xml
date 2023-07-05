@@ -15,44 +15,60 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_16sdp"
         android:layout_marginBottom="@dimen/_8sdp"
+        android:fontFamily="sans-serif"
         android:text="@string/log_in"
-        android:textSize="@dimen/_20sdp"
+        android:textAlignment="center"
         android:textColor="@color/dark_blue"
-        android:textAlignment="center"/>
+        android:textSize="@dimen/_20sdp" />
 
     <EditText
-        android:id="@+id/nama_opt"
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_32sdp"
         android:layout_marginTop="@dimen/_8sdp"
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/rectangle_line"
         android:drawableStart="@drawable/round_person"
         android:drawablePadding="@dimen/_8sdp"
         android:paddingStart="@dimen/_8sdp"
         android:paddingEnd="@dimen/_8sdp"
         android:ems="10"
         android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
         android:inputType="text"
-        android:hint="@string/username" />
+        android:hint="@string/username"
+        android:textColorHint="@color/gray"/>
 
-    <EditText
-        android:id="@+id/alamat_opt"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_32sdp"
-        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
-        android:background="@drawable/rectangle"
-        android:drawableStart="@drawable/round_lock"
-        android:drawablePadding="@dimen/_8sdp"
-        android:paddingStart="@dimen/_8sdp"
-        android:paddingEnd="@dimen/_8sdp"
-        android:ems="10"
-        android:textSize="@dimen/_12sdp"
-        android:inputType="text"
-        android:hint="@string/password" />
+        android:background="@drawable/rectangle_line"
+        android:hint="@string/password"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:passwordToggleDrawable="@drawable/visibility"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/gray">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_12sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_user"

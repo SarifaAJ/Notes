@@ -53,9 +53,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_8sdp"
-            android:background="@drawable/rectangle_1"
+            android:background="@drawable/rectangle_line"
             android:elevation="@dimen/_5sdp"
-            android:textSize="@dimen/_14sdp" />
+            android:textSize="@dimen/_14sdp"
+            android:queryHint="@string/search"/>
     </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
