@@ -1,12 +1,13 @@
 package com.example.notes.roomDatabase
 
 import android.app.Application
-import android.content.Context
 import androidx.room.Room
+import com.example.notes.roomDatabase.dao.NotesDao
 
 class MyApp : Application() {
     companion object {
-        var db : AppDatabase? = null
+        lateinit var db: AppDatabase
+        lateinit var notesDao: NotesDao
     }
 
     override fun onCreate() {
@@ -15,6 +16,6 @@ class MyApp : Application() {
             applicationContext,
             AppDatabase::class.java, "catatan"
         ).allowMainThreadQueries().build()
-
+        notesDao = db.notesDao()!!
     }
 }

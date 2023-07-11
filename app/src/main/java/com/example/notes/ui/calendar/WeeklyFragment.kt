@@ -9,14 +9,11 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.notes.R
 import com.example.notes.adapter.CalendarAdapter
 import com.example.notes.adapter.CalendarUtils
 import com.example.notes.databinding.FragmentWeeklyBinding
-import com.example.notes.adapter.NotesListAdapter
-import com.example.notes.roomDatabase.MyApp
-import com.example.notes.roomDatabase.model.NotesModel
 import com.example.notes.ui.AddNotesActivity
 import java.time.LocalDate
 
@@ -25,9 +22,8 @@ class WeeklyFragment : Fragment(), CalendarAdapter.OnItemClickListener {
     private var weeklyBinding: FragmentWeeklyBinding? = null
     private val binding get() = weeklyBinding!!
 
-    // database
-    private var listNotes: ArrayList<NotesModel> = ArrayList()
-    private lateinit var adapter: NotesListAdapter
+    private var notesListFragment: NotesListFragment? = null
+    private var selectedDate: LocalDate? = null
 
     // calendar setting
     private lateinit var monthYearText: TextView
@@ -69,17 +65,13 @@ class WeeklyFragment : Fragment(), CalendarAdapter.OnItemClickListener {
         val nextButton: ImageButton = binding.nextButton
         nextButton.setOnClickListener { nextWeekAction(it) }
 
-        // database
-        listNotes = MyApp.db?.notesDao()?.getAll() as ArrayList<NotesModel>
-        adapter = NotesListAdapter(listNotes)
+        // Create instance of NotesListFragment
+        notesListFragment = NotesListFragment.newInstance(selectedDate)
 
-        // Menambahkan adapter dan tata letak untuk RecyclerView
-        val recyclerView: RecyclerView = binding.mainRecyData
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = adapter
-
-        // reload adpter jika ada perubahan data
-        adapter.notifyDataSetChanged()
+        // Replace the fragment container with NotesListFragment
+        childFragmentManager.beginTransaction()
+            .replace(R.id.main_recy_data, notesListFragment!!)
+            .commit()
 
     }
 
@@ -92,6 +84,7 @@ class WeeklyFragment : Fragment(), CalendarAdapter.OnItemClickListener {
         val layoutManager = GridLayoutManager(requireContext(), 7)
         binding.calendarRecyclerView.layoutManager = layoutManager
         binding.calendarRecyclerView.adapter = calendarAdapter
+
     }
 
     // calendar setting
@@ -110,6 +103,8 @@ class WeeklyFragment : Fragment(), CalendarAdapter.OnItemClickListener {
     override fun onItemClick(position: Int, date: LocalDate?) {
         calendarUtils.selectedDate = date?: LocalDate.now()
         setWeekView()
+
+        notesListFragment?.updateSelectedDate(selectedDate)
     }
 
     override fun onDestroyView() {

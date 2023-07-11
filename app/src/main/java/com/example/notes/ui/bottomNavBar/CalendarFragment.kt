@@ -14,11 +14,10 @@ class CalendarFragment : Fragment() {
 
     private lateinit var binding : FragmentCalendarBinding
     private var isMonthlyFragment : Boolean = true
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentCalendarBinding.inflate(inflater, container, false)
         return binding.root
     }

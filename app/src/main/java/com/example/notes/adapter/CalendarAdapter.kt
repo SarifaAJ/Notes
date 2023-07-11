@@ -5,11 +5,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.notes.adapter.holder.CalendarHolder
 import com.example.notes.databinding.CalendarCellBinding
+import com.example.notes.ui.calendar.NotesListFragment
 import java.time.LocalDate
 
-class CalendarAdapter(private val days: ArrayList<LocalDate?>, private val calendarUtils: CalendarUtils) : RecyclerView.Adapter<CalendarHolder>() {
+class CalendarAdapter( private val days: ArrayList<LocalDate?>, private val calendarUtils: CalendarUtils) : RecyclerView.Adapter<CalendarHolder>() {
 
     private var itemClickListener: OnItemClickListener? = null
+
+    private var notesListFragment: NotesListFragment? = null
 
     fun setOnItemClickListener(listener: OnItemClickListener?) {
         itemClickListener = listener
@@ -30,7 +33,15 @@ class CalendarAdapter(private val days: ArrayList<LocalDate?>, private val calen
             layoutParams.height = parent.height
         }
 
-        return CalendarHolder(binding, itemClickListener!!, days.toList())
+        val holder = CalendarHolder(binding, itemClickListener!!, days.toList())
+
+        holder.itemView.setOnClickListener {
+            val position = holder.adapterPosition
+            val date = days[position]
+            itemClickListener?.onItemClick(position, date)
+        }
+
+        return holder
     }
 
     override fun getItemCount(): Int {

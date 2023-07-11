@@ -16,7 +16,6 @@ class CalendarHolder(
     private val days: List<LocalDate?>) :
     RecyclerView.ViewHolder(binding.root), View.OnClickListener {
 
-
     init {
         binding.root.setOnClickListener(this)
     }

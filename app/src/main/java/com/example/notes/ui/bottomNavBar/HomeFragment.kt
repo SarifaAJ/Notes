@@ -1,14 +1,12 @@
 package com.example.notes.ui.bottomNavBar
 
 import android.content.Intent
-import android.icu.text.StringSearch
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SearchView
-import androidx.core.view.isNotEmpty
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.notes.R
@@ -64,8 +62,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // database
-        //db = MyApp.db
-        listNotes = db?.notesDao()?.getAll() as ArrayList<NotesModel>
+        listNotes = db.notesDao()?.getAll() as ArrayList<NotesModel>
         adapter = NotesListAdapter(listNotes)
 
         // list or grid view
@@ -92,14 +89,14 @@ class HomeFragment : Fragment() {
     }
     private fun getData() {
         listNotes.clear()
-        listNotes.addAll(db?.notesDao()?.getAll() as Collection<NotesModel>)
+        listNotes.addAll(db.notesDao()?.getAll() as Collection<NotesModel>)
 
         adapter.notifyDataSetChanged()
     }
 
     private fun onSearch(search: String) {
         listNotes.clear()
-        listNotes.addAll(db?.notesDao()?.searchByTitle(search) as Collection<NotesModel>)
+        listNotes.addAll(db.notesDao()?.searchByTitle(search) as Collection<NotesModel>)
 
         adapter.notifyDataSetChanged()
     }

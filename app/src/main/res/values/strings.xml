@@ -119,5 +119,6 @@
     <string name="subjudul_8" translatable="false">Contact Us</string>
     <string name="desc_8" translatable="false">If you have any questions, issues, or requests regarding our privacy policy, please contact us at [contact email address].</string>
     <string name="desc_9" translatable="false">By using our Notes application, you consent to the collection, use, and disclosure of your information as described in this privacy policy.</string>
+    <!-- TODO: Remove or change this placeholder text -->
 
 </resources>
